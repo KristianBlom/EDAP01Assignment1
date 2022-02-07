@@ -117,7 +117,7 @@ def max_value(state, depth, alpha, beta):
       return np.inf
 
    if depth == 0:
-      return eval_move(state)
+      return eval_move(state) 
 
    v = -np.inf
 
