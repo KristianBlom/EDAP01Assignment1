@@ -201,7 +201,7 @@ class ConnectFourEnv(gym.Env):
             for j in range(self.board_shape[1] - 3):
                 value = sum(self.__board[i][j:j + 4])
                 if abs(value) == 4:
-                    return True
+                    return True 
 
         # Test columns on transpose array
         reversed_board = [list(i) for i in zip(*self.__board)]

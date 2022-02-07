@@ -119,7 +119,7 @@ def max_value(state, depth, alpha, beta):
    if depth == 0:
       return eval_move(state) 
 
-   v = -np.inf
+   v = -np.inf 
 
    for child in get_children(state, AI):
       v = max(v, min_value(child[0], depth - 1, alpha, beta))
